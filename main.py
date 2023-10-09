@@ -79,6 +79,8 @@ while True:
     elif choice == 'exit':
         break
     else:
+        drink = MENU[choice]
+        print(f"that will cost you {drink['cost']}")
         print("please insert coins.")
         half, quarter, ten_cents, five_cents = get_coins()
         total = half + quarter + ten_cents + five_cents
